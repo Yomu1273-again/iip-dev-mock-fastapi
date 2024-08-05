@@ -15,7 +15,8 @@ collection = db["SHIPMENT_DETAILS"]
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "http://localhost:4200"
+    "http://localhost:4200",
+    "https://iip-dev-mock-shipment-portal.azurewebsites.net"
 ]
 
 app.add_middleware(
