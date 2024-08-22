@@ -7,9 +7,9 @@ from pymongo import MongoClient
 app = FastAPI()
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://yogeshmuneese:yogeshmuneese@cluster1.bqp7ddk.mongodb.net/")
-db = client["IIP_TEST"]
-collection = db["SHIPMENT_DETAILS"]
+client = MongoClient("mongodb://iip-invoices:WdcGSesRG1iEnyrn4axE9H5w0J2uWOJBLOiFhISUxhyTY01zmIyNRzv5UK9E2BCBU7V4lH0GAAoCACDblVjqnA%3D%3D@iip-invoices.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000")
+db = client["invoices-db"]
+collection = db["shipment-data"]
 
 # Configure CORS
 origins = [
