@@ -31,6 +31,17 @@ app.add_middleware(
 def read_root():
     return {}
 
+@app.get("/getAllExtractedItems")
+async def read_items():
+    collection = db["extraction-data"]
+    items = list(collection.find())
+    print(items)
+    item_object = []
+    for item in items:
+        item.pop('_id', None)
+        item_object.append(item)
+    return item_object
+
 @app.get("/getAllItems")
 async def read_items():
     items = list(collection.find())
