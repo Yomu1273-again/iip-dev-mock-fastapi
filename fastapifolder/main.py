@@ -17,7 +17,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost:4200",
     "https://iip-dev-mock-shipment-portal.azurewebsites.net",
-    "https://iip-dev-prototype-main.azurewebsites.net/"
+    "https://iip-dev-prototype-main.azurewebsites.net"
 ]
 
 app.add_middleware(
