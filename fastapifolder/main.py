@@ -7,7 +7,7 @@ from pymongo import MongoClient
 app = FastAPI()
 
 # Connect to MongoDB
-client = MongoClient("mongodb://iip-invoices:WdcGSesRG1iEnyrn4axE9H5w0J2uWOJBLOiFhISUxhyTY01zmIyNRzv5UK9E2BCBU7V4lH0GAAoCACDblVjqnA%3D%3D@iip-invoices.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000")
+client = MongoClient("mongodb://iip-invoices-reassign:LjeeXXOSNafE19uXjYiQ9U0nu8MuTUdbgIqpFPUBmyJQa6i56QnVc5ujFF35KOyIewh7CTNEwA4IACDbdjcNAQ==@iip-invoices-reassign.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@iip-invoices-reassign@")
 db = client["invoices-db"]
 collection = db["shipment-data"]
 
